@@ -69,7 +69,7 @@ namespace HTML5Plugin
 
             void* GetConcreteInterface( const char* sInterfaceVersion )
             {
-                return static_cast < IPluginHTML5* >( this );
+                return static_cast <IPluginHTML5*>( this );
             };
 
             // IPluginHTML5

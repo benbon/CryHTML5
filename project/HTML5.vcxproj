@@ -135,7 +135,7 @@
     <ClCompile>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\cef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_FORCEDLL;PURE_CLIENT;HTML5PLUGIN_EXPORTS;_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <FloatingPointModel>Precise</FloatingPointModel>
@@ -155,18 +155,26 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>call "$(ProjectDir)\..\tools\stylecode.bat" "$(ProjectDir)\.."</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying CEF</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\cef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_FORCEDLL;PURE_CLIENT;HTML5PLUGIN_EXPORTS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <FloatingPointModel>Precise</FloatingPointModel>
@@ -183,18 +191,26 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>call "$(ProjectDir)\..\tools\stylecode.bat" "$(ProjectDir)\.."</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying CEF</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\cef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_FORCEDLL;PURE_CLIENT;HTML5PLUGIN_EXPORTS;_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <FloatingPointModel>Precise</FloatingPointModel>
@@ -215,18 +231,26 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
       <Command>call "$(ProjectDir)\..\tools\stylecode.bat" "$(ProjectDir)\.."</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying CEF</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>false</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\cef\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_FORCEDLL;PURE_CLIENT;HTML5PLUGIN_EXPORTS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <FloatingPointModel>Precise</FloatingPointModel>
@@ -243,14 +267,22 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkStatus>true</LinkStatus>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
     </Link>
     <PreBuildEvent>
       <Command>call "$(ProjectDir)\..\tools\stylecode.bat" "$(ProjectDir)\.."</Command>
     </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>Copying CEF</Message>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
