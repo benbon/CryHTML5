@@ -1,6 +1,6 @@
-HTML5 Plugin
+CryHTML5
 ====================
-Copyright (c) 2014, The authors of the HTML5 Plugin project
+Copyright (c) 2014, The authors of the CryHTML5 project
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
