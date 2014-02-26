@@ -1,28 +1,21 @@
-HTML5 Plugin for CryEngine SDK
+![CryHTML5 - chromium for CryEngine 3](http://i.imgur.com/PfZKmtQ.png)
 =====================================
-TODO: Describe where you tested it.
+**Chromium** is an open-source browser project that uses WebKit, an open source page renderer, to lay out and render web pages and dynamic graphics at lightning speed. ([see](http://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome)).
 
-TODO: Describe the purpose of your plugin
+**CryEngine** is a game engine designed by the German game developer Crytek. It was used to create the Crysis series, frequently referred to for its incredible graphic fidelity and often used as a graphical benchmark for gaming systems. ([see](http://www.crytek.com/cryengine)].
 
-TODO: Describe where the latest version of your plugin can be found.
+**CryHTML5** is a bridge between the [Chromium Embedded Framework](https://code.google.com/p/chromiumembedded/) and the CryEngine renderer, which allows developers to rapidly build UI for their games using the highly prevalent HTML5 format. Furthermore, developers can use JavaScript and the numerous open source JavaScript libraries available to browser based apps in the game engine.
 
 Installation / Integration
 ==========================
-Use the installer or extract the files to your CryEngine SDK Folder so that the Code and BinXX/Plugins directories match up.
+Clone (or add as a submodule) this repository to the `Code` directory. This plugin depends on `Plugin_D3D` and `Plugin_SDK` which should be checked out and compiled in the same way.
 
-The plugin manager will automatically load up the plugin when the game/editor is restarted or if you directly load it.
+The plugin manager will automatically load up the plugin (from Bin32/Plugins) when the game/editor is restarted or if you directly load it.
 
 CVars / Commands
 ================
-* ```prefix_samplecvar```
-  TODO: Describe the cvar
+None yet.
 
 Flownodes
 =========
-TODO: Describe the flownodes inside your plugin
-
-Objects
-=======
-TODO: Describe custom object classes inside your plugin
-
-...
+None yet, although a FlowNode control interface is planned.
