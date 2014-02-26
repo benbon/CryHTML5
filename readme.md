@@ -1,4 +1,4 @@
-![CryHTML5 - chromium for CryEngine 3](http://i.imgur.com/PfZKmtQ.png)
+![CryHTML5 - chromium for CryEngine 3](http://i.imgur.com/9Ird5pb.png)
 =====================================
 **Chromium** is an open-source browser project that uses WebKit, an open source page renderer, to lay out and render web pages and dynamic graphics at lightning speed. ([see](http://www.chromium.org/developers/design-documents/displaying-a-web-page-in-chrome)).
 
