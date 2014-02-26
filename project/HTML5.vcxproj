@@ -155,7 +155,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
@@ -163,6 +163,7 @@
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.exe" "$(TargetDir)"
 xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
 </Command>
     </PostBuildEvent>
@@ -191,7 +192,7 @@ xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
@@ -199,6 +200,7 @@ xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.exe" "$(TargetDir)"
 xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
 </Command>
     </PostBuildEvent>
@@ -231,7 +233,7 @@ xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PreBuildEvent>
@@ -239,6 +241,7 @@ xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.exe" "$(TargetDir)"
 xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
 </Command>
     </PostBuildEvent>
@@ -267,7 +270,7 @@ xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>libcef.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>libcef.lib;libcef_dll_wrapper.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(ProjectDir)..\cef\$(PlatformTarget)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LinkStatus>true</LinkStatus>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
@@ -277,6 +280,7 @@ xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
     </PreBuildEvent>
     <PostBuildEvent>
       <Command>xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.dll" "$(TargetDir)"
+xcopy /Y "$(ProjectDir)..\cef\$(PlatformTarget)\*.exe" "$(TargetDir)"
 xcopy /Y /E "$(ProjectDir)..\cef\Resources" "$(TargetDir)"
 </Command>
     </PostBuildEvent>
